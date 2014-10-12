@@ -26,6 +26,6 @@ Reads the current time out loud, in intervals of 5 seconds, using 'say'
 
 ## backapp
 
-Bash script using rsync and hard links to save disk space. Can do
-automatic mounting of devices and add a trailing username for the
+Bash script using rsync and hard links between backups to save disk space.
+Can do automatic mounting of devices and add a trailing username for the
 destination dir.

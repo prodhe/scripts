@@ -29,3 +29,8 @@ Reads the current time out loud, in intervals of 5 seconds, using 'say'
 Bash script using rsync and hard links between backups to save disk space.
 Can do automatic mounting of devices and add a trailing username for the
 destination dir.
+
+## checknet
+
+Sends a ping, check for packets received and take action if not enough packets
+went through. Waits for a desired time between checks and loops forever.

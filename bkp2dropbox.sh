@@ -10,10 +10,5 @@
 
 rsync -avhz --delete --exclude '.DS_Store' \
 /Users/petter/Code \
-/Users/petter/Documents/Publikt \
-/Users/petter/howtos \
 /Users/petter/Sites \
-/Users/petter/scripts \
-/Users/petter/.vim \
-/Users/petter/.vimrc \
 /Users/petter/Dropbox/bkp/

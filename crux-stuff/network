@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# for activating all network stuff
+#
+
+# one at a time!
+source /home/live/.scripts/pidlock.sh
+
+if [ $UID -ne 0 ]; then
+	echo "must be root"
+	exit
+fi
+
+case $1 in
+start)
+	echo -e "net start: "
+	/etc/rc.d/net start; echo ok; sleep 2
+	echo -e "wicd start: "
+	/etc/rc.d/wicd start; echo ok; sleep 2
+	#wicd-client &>/dev/null &
+	;;
+stop)
+	#killall wicd-client
+	echo -e "wicd stop: "
+	/etc/rc.d/wicd stop; echo ok; sleep 2
+	echo -e "net stop: "
+	/etc/rc.d/net stop; echo ok; sleep 2
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+*)
+	echo "usage: $0 [start|stop|restart]"
+	;;
+esac
+
+#EOF

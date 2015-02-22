@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# mount msdos partition with nicer umask and dmask
+#
+
+if [ $# -lt 2 ]; then
+    echo "Usage: $0 <device> <mountpoint>"
+    exit 1
+fi
+
+if [ $UID -ne 0 ]; then
+    echo "Must be root."
+    exit 1
+fi
+
+echo -n "Mounting $1 at $2: "
+# 103 is user 'live'
+mount -t vfat,msdos -o uid=103,fmask=133,dmask=022 $1 $2 && echo "done"
+

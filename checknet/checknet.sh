@@ -18,7 +18,7 @@ threshold=3
 # time to wait in seconds before trying again
 timer=180
 
-# the command to execute, if the ping fails with
+# the command to execute, if the ping fails
 action="echo no connection"
 
 

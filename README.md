@@ -38,4 +38,5 @@ went through. Waits for a desired time between checks and loops forever.
 ## github-create-repo
 
 Bash script to create an online repo on github, without using the web browser. Got the original
-from jsw883/github-create-repo. Gets updated whenever I feel the need...
+from [jsw883/github-create-repo](https://github.com/jsw883/github-create-repo).
+Gets updated whenever I feel the need...

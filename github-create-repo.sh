@@ -1,5 +1,6 @@
 #!/bin/bash
 # github-create-repo
+# copied from jsw883/github-create-repo
 
 # usage details
 usage() {

@@ -1,7 +1,0 @@
-# stop filling my inbox
-MAILTO=""
-
-#min	hour	mday	month	wday	command
-
-# copy files to dropbox folder
-*/10	*	*	*	*	~/scripts/bkp2dropbox.sh

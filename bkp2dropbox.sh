@@ -11,4 +11,4 @@
 rsync -avhz --delete --exclude '.DS_Store' \
 /Users/petter/Code \
 /Users/petter/Sites \
-/Users/petter/Dropbox/bkp/
+/Users/petter/Cloud/bkp/
